@@ -1,8 +1,8 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import insertPopoutStylesheetRule from '../src/insertPopoutStylesheetRule';
+import Popout from '../src/Popout';
 import MyPopout from './MyPopout';
-import { Popout } from '../src/Popout';
-import { insertPopoutStylesheetRule } from '../src/insertPopoutStylesheetRule';
 
 import './test.css';
 
@@ -52,9 +52,7 @@ class App extends React.Component<any, any> {
   }
 
   changeText() {
-    this.setState({
-      message: 'Hello ' + Math.random().toString(12).slice(2)
-    });
+    this.setState({ message: 'Hello ' + Math.random().toString(12).slice(2) });
   }
 
   componentDidCatch(error: Error, errorInfo: any) {
@@ -91,7 +89,7 @@ class App extends React.Component<any, any> {
               name={'3'}
               url='test.html'
               onClose={() => this.onUrlClose()}
-              onBlocked={() => console.log("you can't block me!")}
+              onBlocked={() => console.log('you can\'t block me!')}
             />
           )}
 
@@ -105,7 +103,7 @@ class App extends React.Component<any, any> {
   }
 }
 
-const style = document.createElement('style');
+const style: HTMLStyleElement = document.createElement('style');
 
 style.setAttribute('data-merge-styles', 'true');
 style.type = 'text/css';

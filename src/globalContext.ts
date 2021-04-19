@@ -1,4 +1,4 @@
-const id: string = "__$$REACT_POPOUT_COMPONENT$$__";
+const id: string = '__$$REACT_POPOUT_COMPONENT$$__';
 
 export function set(key: string, value: any): void {
   (window as any)[id] = (window as any)[id] || {};

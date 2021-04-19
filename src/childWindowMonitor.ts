@@ -1,9 +1,7 @@
-import * as globalContext from "./globalContext";
-import PopoutMap from "./popoutMap";
+import * as globalContext from './globalContext';
+import PopoutMap from './popoutMap';
 
-const monitors: {
-  [id: string]: any;
-} = {};
+const monitors: { [id: string]: any } = {};
 
 const delay = 250; // ms
 
@@ -30,4 +28,4 @@ function start(id: string): void {
   monitors[id] = setTimeout(monitor, delay);
 }
 
-globalContext.set("startMonitor", start);
+globalContext.set('startMonitor', start);

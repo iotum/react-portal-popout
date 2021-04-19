@@ -16,11 +16,7 @@
     "plugin:react-hooks/recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "formatjs",
-    "prettier",
-    "react"
-  ],
+  "plugins": ["formatjs", "prettier", "react"],
   "settings": {
     "react": {
       "version": "detect"

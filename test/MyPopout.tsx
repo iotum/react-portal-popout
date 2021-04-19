@@ -1,5 +1,5 @@
 import React from 'react';
-import { Popout } from '../src/Popout';
+import Popout from '../src/Popout';
 import PopoutProps from '../src/PopoutProps';
 
 const styles = require('./MyPopout.css');
@@ -30,6 +30,7 @@ export default class MyPopout extends React.Component<MyPopoutProps, any> {
           <h1 className={className}>
             {this.props.message} {this.props.name} {this.state.newStyle ? 'new' : 'old'}
           </h1>
+
           <button onClick={() => this.setState({ newStyle: !this.state.newStyle })}>Toggle Style</button>
         </div>
       </Popout>
