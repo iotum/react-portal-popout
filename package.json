@@ -1,7 +1,7 @@
 {
   "name": "react-portal-popout",
   "private": false,
-  "version": "1.9.4",
+  "version": "1.9.5",
   "description": "Idiomatic React 16 component for popouts, updated because Microsoft doesn't give a damn about maintaining it anymore.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -55,6 +55,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ickerday/react-portal-popout"
+    "url": "https://github.com/iotum/react-portal-popout"
   }
 }
