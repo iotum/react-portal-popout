@@ -242,7 +242,7 @@ export default class Popout extends React.Component<PopoutProps> {
 
     const name = getWindowName(this.props.name!);
 
-    this.child = validatePopupBlocker(window.open(this.props.url || 'about:blank', name, options)!);
+    this.child = validatePopupBlocker(window.open(this.props.url || `about:blank${this.props.fullscreen ? '?fullscreen' : ''}`, name, options)!);
 
     if (!this.child) {
       if (this.props.onBlocked) {

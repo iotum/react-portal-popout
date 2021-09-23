@@ -11,6 +11,7 @@ export default interface PopoutProps {
   options?: Partial<WindowFeaturesOptions>;
   html?: string;
   url?: string;
+  fullscreen?: boolean;
   className?: string;
   style?: CSSRuleList;
 }
