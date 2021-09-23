@@ -1,7 +1,7 @@
 {
   "name": "react-portal-popout",
   "private": false,
-  "version": "1.9.3",
+  "version": "1.9.4",
   "description": "Idiomatic React 16 component for popouts, updated because Microsoft doesn't give a damn about maintaining it anymore.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
